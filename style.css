@@ -1,0 +1,230 @@
+@font-face {
+    font-family: PoppinsM;
+    src: url(font/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: PoppinsR;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 245, 255);
+}
+
+.nav {
+    width: auto;
+    height: 0.8vh;
+    background-color: rgb(143, 181, 250);
+}
+
+.isi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0 60px 20px 60px;
+    font-family: PoppinsM;
+}
+
+.isi .bagan {
+    width: 17%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.isi .bagan-isi {
+    height: fit-content;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    overflow: hidden;
+    line-height: 1.1em;
+}
+
+.isi .bagan-isi .pgraph {
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+    background-color: aquamarine;
+    transform: translate(0, -60px);
+}
+
+.isi .bagan-isi .ls {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 10px;
+    background-color: aquamarine;
+    transform: translate(0, -270px);
+    /* list-style: none; */
+}
+
+.thumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 90vmax;
+    display: flex;
+    margin: 0 60px 10px 60px; 
+    height: 80vmin;
+    overflow: hidden;
+}
+
+/* ---------- */
+
+.thumb-1 {
+    width: auto;
+    height: 560px;
+    display: flex;
+    background-image: url(img/school3.jpg);
+    background-size: cover;
+    transition: transform .5s ease;
+    align-items: center;
+}
+
+.thumb-1:hover {
+    transform: scale(1.04);
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url(img/school3.jpg);
+    background-size: cover;
+}
+
+.thumb-1:hover .teks {
+    opacity: 100%;
+}
+
+/* ---------- */
+
+.thumb-2 {
+    width: auto;
+    height: 560px;
+    display: flex;
+    background-image: url(img/class.jpg);
+    background-size: cover;
+    transition: transform .5s ease;
+    align-items: center;
+}
+
+.thumb-2:hover {
+    transform: scale(1.04);
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url(img/class.jpg);
+    background-size: cover;
+}
+
+.thumb-2:hover .teks {
+    opacity: 100%;
+}
+
+/* ---------- */
+
+.thumb-3 {
+    width: auto;
+    height: 560px;
+    display: flex;
+    background-image: url(img/school4.jpg);
+    background-size: cover;
+    transition: transform .5s ease;
+    align-items: center;
+}
+
+.thumb-3:hover {
+    transform: scale(1.04);
+    background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+    ), url(img/school4.jpg);
+    background-size: cover;
+}
+
+.thumb-3:hover .teks {
+    opacity: 100%;
+}
+
+/* ---------- */
+
+.teks {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: PoppinsM;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: normal;
+    bottom: 150px;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: transform .5s ease;
+}
+
+.teks p {
+    width: 70%;
+    font-family: PoppinsR;
+    font-size: 20px;
+    font-weight: normal;
+    margin: -10px 0;
+    align-self: center;
+}
+
+.banner {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(240, 245, 255);
+}
+
+.banner h2 {
+    margin-bottom: 3px;
+    font-family: PoppinsM;
+    font-size: 40px;
+}
+
+.banner ul {
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    justify-content: space-around;
+    align-self: center;
+    font-family: PoppinsR;
+    
+}
+
+.banner ul li:hover {
+    background-color: rgb(143, 181, 250);
+    border-radius: 20px;
+    transition-duration: .3s;
+}
+
+.banner ul li:hover a {
+    color: white;
+    transition-duration: 0s;
+}
+
+.banner ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+}
